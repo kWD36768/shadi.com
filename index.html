@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
         tailwind.config = {
           theme: {
+
+            container:{
+              center:true
+            },
             extend: {
               colors: {
                 clifford: '#da373d',
@@ -16,28 +25,213 @@
           }
         }
       </script>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/media.css">
-    </head>
-    <body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
 
-        <header class="bg-[red]" >
-            <nav class="flex justify-between items-center ">
-                <div class="figure">
-                    <img src="images/trademark-logo-white.png" alt>
+    <header class=" bg-[url('images/bannermain.jpg')] bg-cover bg-[center] p-[35px_50px]">
+      <nav class=" container flex justify-between items-center px-2 ">
+        <div class="figure">
+          <img src="images/trademark-logo-white.png" alt>
+        </div>
+
+        <ul class="flex item-center ">
+          <li class="text-white me-[30px]"><span>Log in</span> <i
+              class="fa-solid fa-chevron-down"></i></li>
+          <li class="text-white flex items-center cursor-pointer"><i class="fa-solid fa-headset me-[10px] text-[28px] "></i>
+            <span>Help</span> <i class="fa-solid fa-chevron-down"></i></li>
+        </ul>
+      </nav>
+
+      <div class="herosection text-white text-center mt-[220px] mb-[50px] ">
+        <h1 class="text-[30px]">The worold's no.1 matchmaking Services </h1>
+
+        <p class="text-[20px] my-[3 0px]">Search by city, Profession and City</p>
+      </div>
+
+      <div class="header-form container bg-[rgba(0,0,0,0.3)] rounded-[6px] p-[20px_20px]">
+        <form action="" class="grid grid-cols-[2fr_2fr_1fr]   gap-[25px] text-[white]">
+          <div class=" grid grid-cols-[40%_auto] gap-[15px]">
+            <div class="grid grid-cols-[2fr_1fr] border">
+             <div>
+              <label for="" class="block">I'm looking for a</label>
+              <select name="" id="" class="w-full">
+                <option value="">women</option> 
+                <option value="">men</option>
+              </select>
+
+              <label for="" class="block">aged</label>
+              <select name="" id="" class="w-full">
+                <option value="">women</option>
+                <option value="">men</option>
+              </select>
+             </div>
+
+             <div>
+              <label for="">to</label>
+              <select name="" id="">
+                <option value="">women</option>
+                <option value="">men</option>
+              </select>
+             </div>
+
+
+            </div>
+
+
+            <div class="grid grid-cols-[2fr_3fr] gap-[20px] border">
+        
+                <div>
+                  <label for="" class="block">or religion</label>
+                <select name="" id="" class="w-full">
+                  <option value="">women</option>
+                  <option value="">men</option>
+                </select>
                 </div>
+  
+               <div>
+                <label for="" class="block ">add mother toung</label>
+                <select name="" id=""  class="w-full">
+                  <option value="">women</option>
+                  <option value="">men</option>
+                </select>
+               </div>
 
-                <ul class="flex ">
-                    <li>Log in</li>
-                    <li>Help</li>
-                </ul>
-            </nav>
+               
+            
+              
+            </div>
+
+            <div class="bg-[cyan]">
+              <button>add btn</button>
+            </div>
 
             
-        </header>
 
-        <script src="js/app.js">
+           
+         
+        
+          </div>
+      
+
+         
+        </form>
+      </div>
+
+    </header>
+
+    <div class="bannersection m-[30px_0] bg-[#F1F1F2] ">
+      <div class="container grid grid-cols-[2fr_1fr] text-white p-[25px_30px] border  bg-[#201530] rounded rounded-lg mt-[50px]">
+
+        <div>
+          <h1 class="text-[40px] text-[#D2B17C]">Exclusive & Personalize Matchmaking by shadi.com</h1>
+          
+          <ul class="flex  justify-between px-[30px] pt-[40px]">
+            <li>Top Rated Consultants</li>
+            <li>5 Time higher success rates</li>
+            <li>100% Privacy</li>
+        
+          </ul>
+          
+         </div>
+
+       <div>
+
+        <div class="logo">
+          <img src="images/logo.jpg" height="200px" alt="">
+        </div>
+    
+       </div>
+
+        
+
+      </div>
+    </div>
+
+    <div class=" container icons_section flex justify-between px-[25px]">
+      <div class="iconssection_inner">
+        <div class="col1">
+          <div class="1st-icon text-[50px]" >
+
+            <i class="fa-solid fa-house w-full"></i>
+            
+          </div>
+
+          <div class="inttext">
+            <h1>This is demo of Tailwind</h1>
+          </div>
+        </div>
+      </div>
+      <div class="iconssection_inner">
+        <div class="col1">
+          <div class="1st-icon text-[50px]">
+
+            <i class="fa-solid fa-house w-[full]"></i>
+            
+          </div>
+          <div class="inttext">
+            <h1>This is demo of Tailwind</h1>
+          </div>
+        </div>
+      </div>
+      <div class="iconssection_inner">
+        <div class="col1">
+          <div class="1st-icon text-[50px]">
+
+            <i class="fa-solid fa-house w-[full]"></i>
+            
+          </div>
+          <div class="inttext py-[20px]">
+            <h1>This is demo of Tailwind</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class=" container flex justify-between cardssection">
+
+    <div class="card1">
+      <div class="cardimg">
+        <img src="images/1.jpg" alt="">
+      </div>
+      <div class="cardtext">
+        <h2 class="px-[25px]">Tailwind Cards1</h2>
+        <p class="px-[25px]" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos reiciendis, neque maxime, similique minima possimus enim exercitationem obcaecati deserunt ex, tenetur amet? A, eveniet!</p>
+      </div>
+    </div>
+    
+    <div class="card1">
+      <div class="cardimg">
+        <img src="images/2.jpg" alt="">
+      </div>
+      <div class="cardtext">
+        <h2 class="px-[25px]">Tailwind Cards2</h2>
+        <p class=" px-[25px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos reiciendis, neque maxime, similique minima possimus enim exercitationem obcaecati deserunt ex, tenetur amet? A, eveniet!</p>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="cardimg">
+        <img src="images/3.jpg" alt="">
+      </div>
+      <div class="cardtext">
+        <h2 class="px-[25px]">Tailwind Cards3</h2>
+
+        <p class="px-[25px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos reiciendis, neque maxime, similique minima possimus enim exercitationem obcaecati deserunt ex, tenetur amet? A, eveniet!</p>
+      </div>
+    </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+    <script src="js/app.js">
 
     </script>
-    </body>
+  </body>
 </html>
